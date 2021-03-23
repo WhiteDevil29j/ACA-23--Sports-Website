@@ -1,0 +1,132 @@
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-image: url('https://i.postimg.cc/nzk0Rhs6/2119960.jpg');
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+}
+
+#navbar{
+    background: rgba(7, 3, 29, 0.432);
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    position:fixed;
+    overflow: hidden;
+    z-index:1;
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+.main{
+    max-width: 120rem;
+    margin:auto;
+}
+
+ul{
+    list-style-type: none;
+    text-align-last: center;
+}
+
+ul li{
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size:2rem;
+    font-weight: bolder;
+}
+
+ul li a{
+    text-decoration: none;
+    color:white;
+    padding:.5rem 2rem;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: white;
+    color:black;
+}
+
+.logo img{
+    float:left;
+    width:6rem;
+    height:auto;
+}
+
+.tribute{
+    color:white;
+    font-size:2.5rem;
+    position:absolute;
+    top:70%;
+    left:15%;
+    transform: translate(-50%,-50%);
+}
+
+span{
+    color:aqua;
+    font-size:7rem;
+}
+
+hr{
+    background-color:gray;
+    width:80%;
+    height:.3rem;
+    opacity:70%;
+    margin:auto;
+}
+
+#biography{
+    background-image:linear-gradient(to right, rgba(0,0,0, 0.6),rgba(67, 67, 67, 0.6)), url('https://i.postimg.cc/9MzY2BKm/2119955.jpg');
+    background-position: center;
+    background-size: cover;
+    height:125vh;
+}
+
+.bio{
+    max-width: 120rem;
+    margin:auto;
+}
+
+.txt1{
+    border: .5rem solid;
+    border-image-source: linear-gradient(to right,#004c99,#db002c);
+    border-image-slice: 1;
+    padding: 1rem 3rem;
+}
+
+.txt1 h1{
+    text-shadow: .3rem .3rem .15rem solid black;
+    color:white;
+    font-size:4rem;
+    text-align-last:center;
+}
+
+.txt1 p{
+    font-size: 2.2rem;
+    color:white;
+}
+
+.video{
+    max-width: 120rem;
+    margin:auto;
+    border: .5rem solid;
+    border-image-source: linear-gradient(to right,#004c99,#db002c);
+    border-image-slice: 1;
+    padding: 2rem 1rem;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+footer h4{
+    text-align-last: center;
+}
