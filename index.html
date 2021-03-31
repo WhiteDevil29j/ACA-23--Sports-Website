@@ -1,73 +1,114 @@
-<html id="home">
+<html>
     <head>
-        <link rel="stylesheet" href="1st.css">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="1st.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
-        <header>
-            <div id="navbar">
-                <div class="main">
-                    <div class="logo">
-                        <a href='#home'><img src="https://i.postimg.cc/pTFwHdky/cropped-messi-logo-01.png"></a>
-                    </div>
+        <section class="header">
+            <nav>
+                <div class="navlinks" id="NavLinks">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#biography">Biography</a></li>
-                        <li><a href="2nd.html">Achievements</a></li>
-                        <li><a href="3rd.html">Timeline</a></li>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="3rd.html">BIOGRAPHY</a></li>
+                        <li><a href="2nd.html">RESULTS</a></li>
+                        <li><a href="stat.html">STATS</a></li>
                     </ul>
                 </div>
-            </div>
+                <a href="index.html"><img src="https://i.postimg.cc/pTFwHdky/cropped-messi-logo-01.png"></a>
+            </nav>
 
-            <div class="tribute">
-                <h2>The magic of </h2>
-                <h1>Lionel<span> Messi</span></h1>
+            <div class="textbox">
+                <h1>LIONEL</h1>
+                <img src="https://static.messi.com/wp-content/uploads/2019/10/messi-lletres.png" >
             </div>
-        </header>
-        
-        <br><br><hr><br><br>
+        </section>
 
-        <section id="biography">
-            <div class="bio">
-                <br>
-                <div class="txt1">
-                    <br>
-                    <h1>Early Life</h1>
-                    <br>
-                    <p>Messi was born on 24 June 1987 in Rosario, the third of four children of Jorge Messi, a steel factory
-                        manager, and his wife Celia Cuccittini, who worked in a magnet manufacturing workshop. On his father's
-                        side, he is of Italian and Spanish descent, the great-grandson of immigrants from the northcentral Adriatic
-                        Marche region of Italy and Catalonia, and on his mother's side, he has primarily Italian ancestry.Growing
-                        up in a tight-knit, football-loving family, "Leo" developed a passion for the sport from an early age,
-                        playing constantly with his older brothers, Rodrigo and Matías, and his cousins, Maximiliano and Emanuel
-                        Biancucchi, both of whom became professional footballers. At the age of four he joined local club
-                        Grandoli, where he was coached by his father, though his earliest influence as a player came from his
-                        maternal grandmother, Celia, who accompanied him to training and matches. He was greatly affected by
-                        her death, shortly before his eleventh birthday; since then, as a devout Catholic, he has celebrated his
-                        goals by looking up and pointing to the sky in tribute to his grandmother.
-                    </p>
+<!----Photos--->
+
+        <section class="section2">
+            <div class="photo">
+                <hr>
+                <h1>PHOTOS</h1>
+                <hr>
+    
+                <div class="row">
+                    <div class="photocol">
+                        <img src="https://messi.com/wp-content/uploads/2021/03/2021-03-19-ENTRENO-57.jpg">
+
+                        <div class="layer">
+                            <h3>TRAINING SESSION 19-3-2021</h3>
+                        </div>
+                    </div>
+
+                    <div class="photocol">
+                        <img src="https://messi.com/wp-content/uploads/2021/02/2021-02-24-BARCELONA-ELCHE-70.jpg">
+
+                        <div class="layer">
+                            <h3>BARCELONA V ELCHE</h3>
+                        </div>
+                    </div>
+
+                    <div class="photocol">
+                        <img src="https://messi.com/wp-content/uploads/2020/11/2020-11-03-ENTRENO-18.jpg?v=1604416254">
+
+                        <div class="layer">
+                            <h3>TRAINING SESSION 3-11-2020</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slideshow middle">
+                <h1>Image Slider</h1>
+                <div class="slides">
+
+                    <input type="radio" name="r" id="r1" checked> 
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+                    <input type="radio" name="r" id="r6">
+
+                    <div class="slide s1">
+                        <img src="https://messi.com/wp-content/uploads/2021/03/2021-03-21-R.-SOCIEDAD-BARCELONA-50.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://messi.com/wp-content/uploads/2021/03/2021-03-06-OSASUNA-BARCELONA-51.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://messi.com/wp-content/uploads/2021/03/2021-03-09-ENTRENO-07.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://messi.com/wp-content/uploads/2021/02/2021-02-27-SEVILLA-BARCELONA-39.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://messi.com/wp-content/uploads/2021/02/2021-03-15-BARCELONA-HUESCA-90.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://messi.com/wp-content/uploads/2021/02/2021-02-03-VIAJE-GRANADA-86.jpg">
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <label for="r1" class="baar">1</label>
+                    <label for="r2" class="baar">2</label>
+                    <label for="r3" class="baar">3</label>
+                    <label for="r4" class="baar">4</label>
+                    <label for="r5" class="baar">5</label>
+                    <label for="r6" class="baar">6</label>
                 </div>
             </div>
 
-            <br><br>
-
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/G4wTERfoPfA"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nPsz2ggTAkk"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
         </section>
-        <br>
-        <footer>
-            <h4>Made by Arya</h4>
-        </footer>
     </body>
 </html>

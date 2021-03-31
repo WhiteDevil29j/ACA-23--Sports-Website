@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url('https://data.1freewallpapers.com/download/lionel-messi-4k.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+}
+
+.top{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(187, 182, 182, 0.7);
+    border-radius: 50%;
+    position: fixed;
+    left: 92%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    z-index: 1;
+    bottom: 0;
+}
+
+.top .fa{
+    display: flex;
+    line-height: 60px;
+    justify-content: center;
+}
+.top a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 50px;
+}
+
+nav img:hover{
+    transform: scale(1.2,1.2);
+    transition: 1s;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: left;
+}
+
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.4s;
+    padding: 5px 5px;
+    transition: 0.4s linear;
+    position: relative;
+    padding: 10px;
+}
+
+.navlinks ul li a::before, .navlinks ul li a::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.4s linear;
+}
+
+.navlinks ul li a:hover{
+    transform: scale(0.8);
+}
+
+.navlinks ul li a:hover::before{
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    transform: skew(20deg);
+}
+
+.navlinks ul li a:hover::after{
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    transform: skew(-20deg);
+}
+
+hr{
+    width: 80%;
+    margin: auto;
+    height: 3px;
+    background-color: gray;
+    border:none;
+}
+
+.title{
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 6rem;
+    -webkit-text-stroke: 3px rgba(254,97,106,1);
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+#stats{
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), url('https://besthqwallpapers.com/img/original/40010/lionel-messi-4k-goal-barcelona-la-liga.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+}
+
+.total{
+    width: 95%;
+    margin: auto;
+}
+
+.heading{
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.bar{
+    width: 80%;
+    background: linear-gradient(to left,rgba(249,111,87,.85) 0%,rgba(212,85,86,.85) 53%,rgba(212,85,86,.85) 100%);
+    font-size: 1.2rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin-bottom: 10px;
+}
+
+.bar h1{
+    padding-left: 10px;
+    color: white;
+}
+
+.bar2{
+    width: 80%;
+    background: rgba(255,0,0,0.6);background: linear-gradient(to left,rgba(249,111,87,.85) 0%,rgba(212,85,86,.85) 53%,rgba(212,85,86,.85) 100%);
+    font-size: 1.2rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.bar2 h3{
+    padding-left: 10px;
+    color: white;
+}
+
+.bar3{
+    width: 80%;
+    background: linear-gradient(to right,rgba(249,111,87,.85) 0%,rgba(212,85,86,.85) 53%,rgba(212,85,86,.85) 100%);
+    font-size: 1.2rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.bar3 h3{
+    padding-left: 10px;
+    color: white;
+    display: inline;
+    padding-right: 50px;
+}
+
+.bar4{
+    width: 80%;
+    background: -webkit-linear-gradient(right,rgba(94,180,207,.85) 0%,rgba(94,80,162,.85) 52%,rgba(94,80,162,.85) 100%);
+    font-size: 1.2rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin-bottom: 10px;
+}
+
+.bar4 h1{
+    padding-left: 10px;
+    color: white;
+}
+
+.bar5{
+    width: 80%;
+    background: -webkit-linear-gradient(right,rgba(94,180,207,.85) 0%,rgba(94,80,162,.85) 52%,rgba(94,80,162,.85) 100%);
+    font-size: 1.2rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.bar5 h3{
+    padding-left: 10px;
+    color: white;
+}
+
+.bar6{
+    width: 80%;
+    background: linear-gradient(to left,rgba(166,85,164,.85) 0%,rgba(129,86,162,.85) 51%,rgba(129,86,162,.85) 100%);
+    font-size: 1.2rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin-bottom: 30px;
+}
+
+.bar6 h1{
+    padding-left: 10px;
+    color: white;
+}
+
+.bar7{
+    width: 80%;
+    background: linear-gradient(to left,rgba(218,238,85,.85) 0%,rgba(168,215,97,.85) 53%,rgba(168,215,97,.85) 100%);
+    font-size: 1.2rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin-bottom: 30px;
+}
+
+.bar7 h1{
+    padding-left: 10px;
+    color: white;
+}
+
+.bar8{
+    width: 80%;
+    background: linear-gradient(to left,rgba(248,247,96,.85) 0%,rgba(210,173,128,.85) 60%,rgba(210,173,128,.85) 100%);
+    font-size: 1.2rem;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.bar8 h1{
+    padding-left: 10px;
+    color: white;
+}

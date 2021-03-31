@@ -1,252 +1,327 @@
-<html id="home">
+<html id='home'>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="3rd.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
-        <header>
-            <div id="navbar">
-                <div class="main">
-                    <div class="logo">
-                        <a href='#home'><img src="https://i.postimg.cc/pTFwHdky/cropped-messi-logo-01.png"></a>
-                    </div>
+        <a href="#home">
+            <div class="top">
+                <i class="fa fa-chevron-up"></i>
+            </div>
+        </a>
+
+        <section class="header">
+            <nav>
+                <div class="navlinks" id="NavLinks">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">Biography</a></li>
-                        <li><a href="2nd.html">Achievements</a></li>
-                        <li><a href="#home">Timeline</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="2nd.html">RESULTS</a></li>
+                        <li><a href="stat.html">STATS</a></li>
+                        <li><a href="#bio">BIOGRAPHY</a></li>
+                        <li><a href="#tim">TIMELINE</a></li>
                     </ul>
                 </div>
-            </div>
+                <a href="index.html"><img src="https://i.postimg.cc/pTFwHdky/cropped-messi-logo-01.png"></a>
+            </nav>
 
-            <div class="container">
-                <button style="font-size: 2rem;font-weight: bolder; font-family: 'Courier New', Courier, monospace;" class="click">Year</button>
-                <div class="list">
-                    <li class="links"><a href="#timeline">1987</a></li>
-                    <li class="links"><a href="#a1987">1994</a></li>
-                    <li class="links"><a href="#a1994">2000</a></li>
-                    <li class="links"><a href="#a2000">2003</a></li>
-                    <li class="links"><a href="#a2003">2005</a></li>
-                    <li class="links"><a href="#a2005">2007</a></li>
-                    <li class="links"><a href="#a2007">2008</a></li>
-                    <li class="links"><a href="#a2008">2009</a></li>
-                    <li class="links"><a href="#a2009">2012</a></li>
-                    <li class="links"><a href="#a2012">2013</a></li>
-                    <li class="links"><a href="#a2013">2015</a></li>
-                    <li class="links"><a href="#a2015">2016</a></li>
-                    <li class="links"><a href="#a2016">2017</a></li>
-                    <li class="links"><a href="#a2017">2018</a></li>
-                    <li class="links"><a href="#a2018">2019</a></li>
-                    <li class="links"><a href="#a2019">2020</a></li>
-                </div>
-            </div>
-            <script>
-                let click = document.querySelector('.click');
-                let list = document.querySelector('.list');
-                click.addEventListener("click",()=>{
-                    list.classList.toggle('newlist');
-                });
-            </script>
-
-            <div class="stats">
-                <h1>Season played:<span> 17 seasons</span></h1>
-                <h1>Games Played:<span> 910 Games</span></h1>
-                <h1>All time Goals:<span> 734 Goals<span></h1>
-                <h1>Goals per Game:<span> 0.81 goals</span></h1>
-                <h1>All time Assists:<span> 309 assists</span></h1>
-                <h1>Indirect Assists:<span> 71 indirect Assists</span></h1>
-            </div>
-        </header>
-
-        <div class="title">
-            <br><hr><br>
-            <h1>TIMELINE</h1>
-            <br><hr><br>
-        </div>
-
-        <section id="timeline">      
-            <div class="time"   >
-                <div class="bar">
-                    <p>a</p>
-                </div>
-                <ul>
-                    <li> 
-                        <div id="a1987">
-                            <h3>24th July 1987</h3>
-                            <h1>Birth</h1>
-                            <p>Born in Rosario, Argentina to Celia Maria Cuccittini and Jorge Messi.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a1994">
-                            <h3>30th March 1994</h3>
-                            <h1>Newwell Old Boys</h1>
-                            <p>Messi joined the league of Newell Old Boys.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2000">
-                            <h3>2000</h3>
-                            <h1>Growth Defect</h1>
-                            <p>Messi was diagnosed with a growth defect and couldn't afford treatment.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="b2000">
-                            <h3>14th Decemeber 2000</h3>
-                            <h1>Moving</h1>
-                            <p>Lionel Messi received a trial run at the FC Barcelona, he also moved to Spain to get treatment paid for by the coach of FC Barcelona.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2003">
-                            <h3>16th October 2003</h3>
-                            <h1>First Appearence</h1>
-                            <p>Made his first appearance on field against FC Porto in a friendly match.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2005">
-                            <h3>1st May 2005</h3>
-                            <h1>First Goal</h1>
-                            <p>Became the youngest player to score a goal for the FC Barcelona team.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2007">
-                            <h3>2007</h3>
-                            <h1>Leo Messi Foundation</h1>
-                            <p>Created the Leo Messi Foundation to help support disadvantaged children.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2008">
-                            <h3>2008</h3>
-                            <h1>Olympic</h1>
-                            <p>Argentina won the Gold Medal in the Olympic Games with Messi on Team.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2009">
-                            <h3>1st December 2009</h3>
-                            <h1>First Award</h1>
-                            <p>Received first Ballon d'Or beating Cristiano Ronaldo by 240 votes.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2012">
-                            <h3>2012</h3>
-                            <h1>World Record</h1>
-                            <p>Received first Ballon d'Or beating Cristiano Ronaldo by 240 votes.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2013">
-                            <h3>7 january 2013</h3>
-                            <h1>More Awards</h1>
-                            <p>Received 4th Ballon d'Or.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="b2013">
-                            <h3>17th March 2013</h3>
-                            <h1>Aye aye Captain</h1>
-                            <p>First Match as Barcelona Captain against Rayo Volecano.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2015">
-                            <h3>30th December 2015</h3>
-                            <h1>Loyalty</h1>
-                            <p>Makes his 500th appearence for Barcelona aginst Real Beits.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2016">
-                            <h3>16th January 2016</h3>
-                            <h1>More N More Awards</h1>
-                            <p>Recievs 5th Ballon d'Or.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="b2016">
-                            <h3>3rd Feburary 2016</h3>
-                            <h1>Goals</h1>
-                            <p>Scores 500th career goal (Youth Included).</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="c2016">
-                            <h3>17th Feburary 2016</h3>
-                            <h1>More Goals</h1>
-                            <p>Scores 400th LaLiga goal.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2017">
-                            <h3>4th November 2017</h3>
-                            <h1>Again Loyalty</h1>
-                            <p>Makes his 500th appearence for Barcelona aginst Sevilla.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2018">
-                            <h3>2018</h3>
-                            <h1>Again Awards</h1>
-                            <p>Recievs 6th Ballon d'Or.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2019">
-                            <h3>2019</h3>
-                            <h1>The Best</h1>
-                            <p>Won The Best of the year Award..</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="a2020">
-                            <h3>2020</h3>
-                            <h1>More Goals</h1>
-                            <p>Score 700th career goal.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="b2020">
-                            <h3>2020</h3>
-                            <h1>Top Scorer</h1>
-                            <p>Scores 25 goals in the LaLiga.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div id="c2020">
-                            <h3>2020</h3>
-                            <h1>Most Assists</h1>
-                            <p>Set a World Recored for most assist in a season of LaLiga.</p>
-                        </div>
-                    </li>
-                </ul>
+            <div class="quote">
+                <h2>Sometimes you have to accept you can't win all the time.</h2>
+                <h3>-Lionel<span> Messi</span></h3>
             </div>
         </section>
+
+        <div id="bio">
+            <div class="title">
+                <hr>
+                <h1>BIOGRAPHY</h1>
+                <hr>
+            </div>
+            <section class="childhood">
+                    <article class="text">
+                        <h1>Childhood</h1>
+                        <p>
+                            As a child, I always had a ball nearby. I liked every sport, but football was the one I liked the most. At home, everybody was crazy about football: my brothers, my cousins... everyone. We all played football — it was the most important thing in our lives. At the age of four, after playing for my neighborhood’s team, I decided to go to Grandoli Club which was nearby. At the age of eight, I got the opportunity to join Newell’s Old Boys as my brother, Rodrigo, was already playing for them and invited me to play at their lower youth division.
+                        </p> 
+                        <br>
+                        <p>
+                            We did not live in Argentina for very long. I left when I was 13, way before I started playing for Barcelona, a team which I had been following for a long time. I had huge expectations and was very excited to play for them since it seemed impossible.
+                        </p>
+                        <br>
+                        <p>
+                            I had a growth problem and was used to being the shortest player on the field, but I knew that I would eventually grow — albeit, it would be a slow process. Consequently, I had to administer a daily injection on my legs as part of the treatment process. At the beginning it was painful, but sometimes certain things must be endured in order to achieve your dreams.
+                        </p>
+
+                    </article>
+        
+                    <img class="lilmessi" src="https://static.messi.com/wp-content/uploads/2019/10/infancia1.jpg" >
+
+            </section>
+            
+            <section class="barcelona">
+               <img src="https://static.messi.com/wp-content/uploads/2019/10/noticia-gran.jpg" class="barmessi"> 
+
+               <article class="text1">
+                   <h1>Barcelona</h1>
+                   <p>
+                       When I arrived in Barcelona, my dream was to play in the first team, but I never could’ve imagined what would happen next! We visited the city like tourists — Barça’s stadium is beautiful, and I still remember the emotion I felt the first time I stepped foot onto the Camp Nou.
+                    </p>
+                    <br>
+                    <p>                    
+                        As soon as I arrived in Barcelona, I started training. I didn’t sleep at La Masía , but I went to León XIII (an elementary school), where all the kids from other cities where studying at. I spent every afternoon with those kids, many of them from Barcelona and the rest from other Spanish provinces, like Iniesta. They also knew what it was like to be far away from their families and friends, so we had a lot of things in common. I had a hard time during the first two seasons. I couldn’t play for months because my immigration paperwork had not cleared and I got injured in my very first match.
+                    </p>
+                    <br> 
+                    <p>
+                        The real change occurred at the cadet category , as we had a great team and the good fortune of winning everything. We had Gerard Piqué, Cesc Fábregas, Víctor Vázquez and didn’t concede a single match. Today, after so many years, I understand the Barcelona philosophy which made me stronger as a football player and as a person. When I was sixteen, I got called up and was informed that I would become a professional player — I was so excited! I was going to be part of the first team! My first minutes at Barcelona transpired in a match against Porto and my father was told that I might travel with the team; I didn’t tell anyone and my family found out while watching the news. That day, my dream had come true.
+                    </p>
+               </article>
+            </section>
+
+            <section class="debut">
+                <article class="text">
+                    <h1>Debut and Magic</h1>
+                    <p>
+                        My official debut was for La Liga , in a derby against Espanyol . I was playing for Barça B, but also alternated between Barça C and, at times, with Juvenile B — my corresponding age category. From one day to the next, I was told to report to the first team’s locker room and start training with them. The first day, I walked in shyly, and it felt like my first days at the club, just being there and seeing all those legends — so many great players and wonderful people as well! They treated me very well and I adapted to the team very quickly.
+                    </p>
+                    <br>  
+                    <p>
+                        We were a young group with a strong appetite for victory, and it was easy to be a part of the team because Ronaldinho, Deco, Silvynho and Motta made me feel like one of them. As did Xavi, Iniesta and Puyol — all of them showed to be truly exceptional human beings. Dinho was our leader, the best player in the squad, and I learned a lot of things from him. I feel grateful of how he treated me since the first day I arrived and all the assistance he gave me. I feel very lucky to have lived so many great moments with him and to have conquered so many things together.
+                    </p>
+                    <br> 
+                    <p> 
+                        My first goal was an indescribable feeling. I went to dispute the ball against a defender, won it, passed it back to Ronaldinho and remained in my position waiting for his magic. Ronaldinho chipped it over to me and the ball landed just in front of me — I faked a power shot and lobbed it over the goalkeeper. I ran to the crowd, and when I turned back, there came Dinho, running to hug me. He lifted me up and all my teammates joined in the celebration.  Coming to Barcelona was a big step for me and the most important decision of my life — not only career-wise, but personally as well. I grew up in this club and lived so many happy moments with my family.
+                    </p>
+                </article>
+
+                <img src="https://www.fcbarcelona.com/photo-resources/2019/11/15/8a2f5862-c1e6-4778-82de-710d2f53f673/16-11-03-Lionel-Messi-04.jpg?width=1200&height=750" class="debmessi">
+            </section>
+
+            <section class="argent">
+
+                <img src="https://i.pinimg.com/originals/2c/57/47/2c5747723bf58a09d6f0ee194010d3eb.jpg" class="natmessi">
+
+                <article class="text1">
+                    <h1>Argentina National Team</h1>
+                    <p>
+                        I’ve always wanted to play for the national team and living far away made that dream even stronger. I thought that it was going to be very hard, that people in Argentina wouldn’t know or recognize me. But one day, when I was sixteen, I was called up to play in two friendlies with the U- 20 team against Paraguay and Uruguay — the beginning of my journey. We won the U-20 World Cup in Netherlands, one of the biggest achievements of my career.
+                    </p>
+                    <br>  
+                    <p>
+                        I would trade all my personal achievements just to win the World Cup with the national team. I’ve always said it: it can’t be compared to anything else. We all want to win, and I want to win more than anyone, because I’ve been struggling with this common dream — to win a championship with Argentina.
+                    </p>
+                    <img src="https://static.messi.com/wp-content/uploads/2019/10/fiirma.png" class="sign">
+                </article>
+            </section>
+        </div>
+
+        <div id="tim">
+            <div class="title">
+                <hr>
+                <h1>TIMELINE</h1>
+                <hr>
+            </div>
+            <div class="timeline">
+                <ul>
+                  <li>
+                    <div>
+                        <time>July 24, 1987</time>
+                        <h2>Birth</h2>
+                        <p>Born in Rosario, Argentina to Celia Maria Cuccittini and Jorge Messi.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>March 30, 1994</time>
+                        <h2>Newwell Old Boys
+                        </h2>
+                        <p>Messi joined the league of Newell Old Boys.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>2000</time>
+                        <h2>Growth Defect</h2>
+                        <p>Messi was diagnosed with a growth defect and couldn't afford treatment.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>Decemeber 14, 2000</time>
+                        <h2>Moving</h2>
+                        <p>Lionel Messi received a trial run at the FC Barcelona, he also moved to Spain to get treatment paid for by the coach of FC Barcelona.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>November 16, 2003</time>
+                        <h2>First Appearence</h2>
+                        <p>At the age of 16, Messi makes his first-team debut in a friendly against Porto.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                      <div>
+                          <time>May 2004</time>
+                          <h2>First Win</h2>
+                          <p>Wins La Liga title for the first time.</p>
+                      </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>May 1, 2005</time>
+                        <h2>First Goal</h2>
+                        <p>Became the youngest player to score a goal for the FC Barcelona team.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>April 18, 2007</time>
+                        <h2>Best Goal</h2>
+                        <p>Messi scored his best goal ever against Getafe.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>2008</time>
+                        <h2>Olympic</h2>
+                        <p>Argentina won the Gold Medal in the Olympic Games with Messi on Team.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>May 27, 2009</time>
+                        <h2>Champions</h2>
+                        <p>Barca win the Champions League, beating Manchester United in the final, 2-0, with Messi scoring. </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>December 1, 2009</time>
+                        <h2>First Award</h2>
+                        <p>Received first Ballon d'Or beating Cristiano Ronaldo by 240 votes.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>May 28, 2011</time>
+                        <h2>UCL</h2>
+                        <p>Messi wins UCL for a third time, scoring in a 3-1 win over Manchester United in the final.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>March 7, 2012</time>
+                        <h2>Five Goals</h2>
+                        <p>Scores five times against Bayer Leverkusen in a Champions League match. </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>March 20, 2012</time>
+                        <h2>Top Scorer</h2>
+                        <p>Messi becomes Barcelona's all-time top scorer with his 231st goal. He's now got 634 goals for the club. </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>January 7, 2013</time>
+                        <h2>More Awards</h2>
+                        <p>Received 4th Ballon d'Or.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>June 6, 2015</time>
+                        <h2>Winners</h2>
+                        <p> Barca beat Juventus in the UCL final, 3-1</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>August 10, 2018</time>
+                        <h2>Aye aye Captain</h2>
+                        <p>First Match as Barcelona Captain against Rayo Volecano.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>May 2019</time>
+                        <h2>Last Win?</h2>
+                        <p>Wins La Liga title for potentially the last time. </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>May 25, 2019</time>
+                        <h2>Defeat</h2>
+                        <p>Loses potential last final with Barcelona, 2-1, to Valencia in Copa del Rey.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>December 2, 2019</time>
+                        <h2>World Record</h2>
+                        <p>Messi wins the Ballon d'Or for a record sixth time.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>June 30, 2020</time>
+                        <h2>Too Many Goals</h2>
+                        <p>Scores goal No. 700 of his pro career when you combine Barca stats and Argentina national team stats.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>August 8, 2020</time>
+                        <h2>Last Goal?</h2>
+                        <p>Scores potentially his last goal for Barca, finding the net against Napoli in the UCL round of 16 second leg.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>August 14, 2020</time>
+                        <h2>Crushed</h2>
+                        <p>Barca lose 8-2 to Bayern Munich in the UCL quarterfinals it what might end up being the last game he ever plays for the team. </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div>
+                        <time>August 25, 2020</time>
+                        <h2>Sad Moment</h2>
+                        <p>Messi informs Barcelona that he wants to leave.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+        </div>
+<!-- java -->
+        <script  src="3rd.js"></script>
     </body>
 </html>

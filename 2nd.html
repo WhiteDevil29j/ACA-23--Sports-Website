@@ -1,476 +1,873 @@
-<html>
+<html id="home">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="2nd.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
-        <header>
-            <div id="navbar">
-                <div class="main">
-                    <div class="logo">
-                        <a href='index.html'><img src="https://i.postimg.cc/pTFwHdky/cropped-messi-logo-01.png"></a>
-                    </div>
-                    <div class="ach">
-                       <a href="#home"><img src="https://i.postimg.cc/j5Rqc5NV/Messi-palmares-ENG.png"></a>
-                    </div>
+        <a href="#home">
+            <div class="top">
+                <i class="fa fa-chevron-up"></i>
+            </div>
+        </a>
+        
+
+        <section class="header">
+            <nav>
+                <div class="navlinks" id="NavLinks">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#FCbar">FC Barcelona</a></li>
-                        <li><a href="#argentina">Argentina</a></li>
-                        <li><a href="#indi">Individual Awards</a></li>
-                        <li><a href="#records">Records</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="3rd.html">BIOGRAPHY</a></li>
+                        <li><a href="#home">RESULTS</a></li>
+                        <li><a href="stat.html">STATS</a></li>
                     </ul>
                 </div>
+
+                <div class="container">
+                    <button class="click">Year</button>
+                    <div class="list">
+                        <li class="links"><a href="#section3">2004</a></li>
+                        <li class="links"><a href="#a2005">2005</a></li>
+                        <li class="links"><a href="#section4">2006</a></li>
+                        <li class="links"><a href="#a2007">2007</a></li>
+                        <li class="links"><a href="#section5">2008</a></li>
+                        <li class="links"><a href="#section6">2009</a></li>
+                        <li class="links"><a href="#section7">2010</a></li>
+                        <li class="links"><a href="#section8">2011</a></li>
+                        <li class="links"><a href="#section9">2012</a></li>
+                        <li class="links"><a href="#a2013">2013</a></li>
+                        <li class="links"><a href="#section10">2014</a></li>
+                        <li class="links"><a href="#section11">2015</a></li>
+                        <li class="links"><a href="#section12">2016</a></li>
+                        <li class="links"><a href="#section13">2017</a></li>
+                        <li class="links"><a href="#section14">2018</a></li>
+                        <li class="links"><a href="#section15">2019</a></li>
+                    </div>
+                </div>
+                <script>
+                    let click = document.querySelector('.click');
+                    let list = document.querySelector('.list');
+                    click.addEventListener("click",()=>{
+                        list.classList.toggle('newlist');
+                    });
+                </script>
+
+                <a href="index.html"><img src="https://i.postimg.cc/pTFwHdky/cropped-messi-logo-01.png"></a>
+            </nav>
+
+            <div class="textbox">
+                <img src="https://static.messi.com/wp-content/uploads/2020/04/Messi-palmares-ENG.png" >
             </div>
-
-            <div class="quote">
-                <h2>Sometimes you have to accept you can't win all the time.</h2>
-                <h3>-Lionel<span> Messi</span></h3>
-            </div>
-        </header>
-
-        <section id="FCbar">
-            <br><br><hr><br>
-            <h1 class="title">FC BARCELONA</h1>
-            <br><hr><br><br><br><br>
-            <div class="image1">
-                <img src="https://static.messi.com/wp-content/uploads/2020/03/messi.png">
-            </div>
-            
-            <main>
-                <div class="won1">
-                    <div class="game">
-                        <h1>Champions League</h1>
-                        <p>(4 times Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/champions.png">
-                    <br>
-                    <div class="year">
-                        <h3>2005/06 ● 2008/09</h3>
-                        <h3>2010/11 ● 2014/15</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won2">
-                    <div class="game">
-                        <h1>LaLiga</h1>
-                        <p>(10 times Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/liga.png">
-                    <br>    
-                    <div class="year">
-                        <h3>2004/05 ● 2005/06</h3>
-                        <h3>2008/09 ● 2009/10</h3>
-                        <h3>2010/11 ● 2012/13</h3>
-                        <h3>2014/15 ● 2015/16</h3>
-                        <h3>2017/18 ● 2018/19</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won3">
-                    <div class="game">
-                        <h1>Copa-del-Rey</h1>
-                        <p>(6 times Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/copa-del-rei.png">
-                    <br>
-                    <div class="year">
-                        <h3>2008/09 ● 2011/12</h3>
-                        <h3>2014/15 ● 2015/16</h3>
-                        <h3>2016/17 ● 2017/18</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won4">
-                    <div class="game">
-                        <h1>Club World Cup</h1>
-                        <p>(3 times winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/mundialito-de-clubs.png">
-                    <br>    
-                    <div class="year">
-                        <h3>2009 ● 2011</h3>
-                        <h3>2015</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won5">
-                    <div class="game">
-                        <h1>European Super Cup</h1>
-                        <p>(3 times winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/european-supercup.png">
-                    <br>
-                    <div class="year">
-                        <h3>2009/10 ● 2011/12</h3>
-                        <h3>2015/16</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won6">
-                    <div class="game">
-                        <h1>Supercopa de España</h1>
-                        <p>(8 times Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/spanish-supercup.png">
-                    <br>    
-                    <div class="year">
-                        <h3>2005/06 ● 2006/07</h3>
-                        <h3>2009/10 ● 2010/11</h3>
-                        <h3>2011/12 ● 2013/14</h3>
-                        <h3>2016/17 ● 2018/19</h3>
-                    </div>
-                    <br><br>
-                </div>
-            </main>
         </section>
 
+<!----Results--->        
 
-        <section id="argentina">
-            <br><br><hr><br>
-            <h1 class="title">ARGENTINA</h1>
-            <br><hr><br><br><br><br>
-            <div class="image2">
-                <img src="https://static.messi.com/wp-content/uploads/2020/03/messi-argentian-silhouette.png">
-            </div>
-            
-            <main class="main3">
-                <div class="won7">
-                    <div class="game">
-                        <h1>U-20 World Cup</h1>
-                        <p>(1 time Winner)</p>
+        <section id="section3">
+            <div class="result">
+                <hr>
+                <h1>RESULTS</h1>
+                <hr>
+
+                <h1 class="T" >2004</h1>
+                <div class="row">
+                    <div class="resultcol1">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/liga.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>LaLiga</h2>
+                        <h3>2004/05</h3>
                     </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/sub-20.png">
-                    <br>
-                    <div class="year">
+                    <img src="http://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Lionel-Messi-PNG-Transparent-Image-500x375.png" class="img1">
+                </div>
+
+                <h1 class="T"  id="a2005">2005</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/liga.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>LaLiga</h2>
+                        <h3>2005/06</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/champions.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Champions League</h2>
+                        <h3>2005/06</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/spanish-supercup.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Supercopa
+                            de España</h2>
+                        <h3>2005/06</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/sub-20.png" class="trp">
+                        <h4 style="color: tomato;">(Argentina)</h4>
+                        <h2 style="color: aqua;">U-20
+                            World Cup</h2>
                         <h3>2005</h3>
                     </div>
-                    <br><br>
+                       <img src="https://www.pngarts.com/files/5/Lionel-Messi-Free-PNG-Image.png" class='img2'>
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/golden-boy.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color:lightgreen;">Golden Boy</h2>
+                        <h3>2005</h3>
+                    </div>
                 </div>
-
-                <div class="won8">
-                    <div class="game">
-                        <h1>Beijing Olympic Games Gold Medal</h1>
-                        <p>(1 time Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/medalal-oro.png">
-                    <br>   
-                    <div class="year">
-                        <h3>2008</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won9">
-                    <div class="game">
-                        <h1>Fifa World Cup Finalist</h1>
-                        <p>(1 time Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/mundial-futbol.png">
-                    <br>
-                    <div class="year">
-                        <h3>2014</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won10">
-                    <div class="game">
-                        <h1>Copa América Finalist</h1>
-                        <p>(3 time Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/copa-america.png">
-                    <br>   
-                    <div class="year">
-                        <h3>2007 ● 2015 ● 2016</h3>
-                    </div>
-                    <br><br>
-                </div>
-            </main>
+            </div>
         </section>
 
-        <section id="indi">
-            <br><br><hr><br>
-            <h1 class="title">INDIVIDUAL AWARDS</h1>
-            <br><hr><br><br><br><br>
-            <div class="image1">
-                <img src="https://static.messi.com/wp-content/uploads/2020/03/messi-oro.png">
-            </div>
-            
-            <main class="main1">
-                <div class="won01">
-                    <div class="game">
-                        <h1>Ballon d'Or</h1>
-                        <p>(6 times Winner)</p>
+        <section id="section4">
+            <div class="result">
+                <h1 class="T">2006</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/spanish-supercup.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Supercopa
+                            de España</h2>
+                        <h3>2006/07</h3>
                     </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/balon-de-oro.png">
-                    <br>
-                    <div class="year">
-                        <h3>2009 ● 2010 ● 2011</h3>
-                        <h3>2012 ● 2015 ● 2019</h3>
-                    </div>
-                    <br><br>
-                </div>
 
-                <div class="won02">
-                    <div class="game">
-                        <h1>FIFA
-                            World Player</h1>
-                        <p>(1 time Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/fifa-world-player.png">
-                    <br>
-                    <div class="year">
-                        <h3>2009</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won03">
-                    <div class="game">
-                        <h1>The Best
-                            Award</h1>
-                        <p>(1 time Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2021/02/FIFA.png">
-                    <br>
-                    <div class="year">
-                        <h3>2019</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won04">
-                    <div class="game">
-                        <h1>European
-                            Golden Shoe</h1>
-                        <p>(6 times Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/boat-d_or.png">
-                    <br>   
-                    <div class="year">
-                        <h3>2009/10 ● 2011/12</h3>
-                        <h3>2012/13 ● 2016/17</h3>
-                        <h3>2017/18 ● 2018/19</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won05">
-                    <div class="game">
-                        <h1>Laureus World
-                            Sports Awards</h1>
-                        <p>(1 time Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/laureus.png">
-                    <br>   
-                    <div class="year">
-                        <h3>2019</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won06">
-                    <div class="game">
-                        <h1>Pichichi
-                            LaLiga</h1>
-                        <p>(7 times Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/Pichichi-liga.png">
-                    <br>    
-                    <div class="year">
-                        <h3>2009/10 ● 2011/12</h3>
-                        <h3>2012/13 ● 2016/17</h3>
-                        <h3>2017/18 ● 2018/19</h3>
-                        <h3>2019/20</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won07">
-                    <div class="game">
-                        <h1>MVP
-                            LaLiga</h1>
-                        <p>(9 times Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/MVP-LA-LIGA.png">
-                    <br>    
-                    <div class="year">
-                        <h3>2008/09 ● 2009/10</h3>
-                        <h3>2010/11 ● 2011/12</h3>
-                        <h3>2012/13 ● 2014/15</h3>
-                        <h3>2016/17 ● 2017/18</h3>
-                        <h3>2018/19</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won08">
-                    <div class="game">
-                        <h1>Champions
-                            top scorer</h1>
-                        <p>(6 times Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/goleador-europa.png">
-                    <br>    
-                    <div class="year">
-                        <h3>2008/09 · 2009/10</h3>
-                        <h3>2010/11 · 2011/12</h3>
-                        <h3>2014/15 · 2018/19</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won09">
-                    <div class="game">
-                        <h1>Bravo
-                            Award</h1>
-                        <p>(1 time Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/trofeo-bravo.png">
-                    <br>   
-                    <div class="year">
-                        <h3>2007</h3>
-                    </div>
-                    <br><br>
-                </div>
-
-                <div class="won010">
-                    <div class="game">
-                        <h1>FIFA
-                            FIFPro</h1>
-                        <p>(1 time Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/FIFPRO.png">
-                    <br>    
-                    <div class="year">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/FIFPRO.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Supercopa
+                            de España</h2>
                         <h3>2006</h3>
                     </div>
-                    <br><br>
                 </div>
 
-                <div class="won011">
-                    <div class="game">
-                        <h1>2014 World Cup
-                            Golden Ball</h1>
-                        <p>(1 time Winner)</p>
+                <h1 class="T" id="a2007">2007</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/copa-america.png" class="trp">
+                        <h4>(Argentina)</h4>
+                        <h2>Copa América
+                            Finalist</h2>
+                        <h3>2007</h3>
                     </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/pilota-d_or.png">
-                    <br>  
-                    <div class="year">
-                        <h3>2014
-                        </h3>
-                    </div>
-                    <br><br>
-                </div>
 
-                <div class="won012">
-                    <div class="game">
-                        <h1>Men's Player
-                            of the Year</h1>
-                        <p>(2 times Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/millor-jugador-europa.png">
-                    <br>   
-                    <div class="year">
-                        <h3>2010/11 ● 2014/15</h3>
-                    </div>
-                    <br><br>
-                </div>
+                    <img src="https://static.messi.com/wp-content/uploads/2020/03/messi.png" class="img3">
 
-                <div class="won013">
-                    <div class="game">
-                        <h1>Golden
-                            Boy</h1>
-                        <p>(1 time Winner)</p>
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/trofeo-bravo.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Bravo Award</h2>
+                        <h3>2007</h3>
                     </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/golden-boy.png">
-                    <br>    
-                    <div class="year">
-                        <h3>2005</h3>
-                    </div>
-                    <br><br>
                 </div>
-
-                <div class="won014">
-                    <div class="game">
-                        <h1>Onze
-                            d'Or</h1>
-                        <p>(4 times Winner)</p>
-                    </div>
-                    <br>
-                    <img src="https://static.messi.com/wp-content/uploads/2020/03/ONZE.png">
-                    <br>   
-                    <div class="year">
-                        <h3>2009 ● 2011</h3>
-                        <h3>2012 ● 2018</h3>
-                    </div>
-                    <br><br>
-                </div>
-            </main>
+            </div>
         </section>
 
-        <section id="records">
-            <br><br><hr><br>
-            <h1 class="title">RECORDS</h1>
-            <br><hr><br><br>
-            <main class="main4">
-                <div class="rec1">
-                    <p>·All-time top scorer at same club</p>
-                    <p>·FC Barcelona all-time top goalscorer</p>
-                    <p>·All-time top goalscorer in LaLiga</p>
-                    <p>·Top goalscorer in the 21st century</p>
-                    <p>·Top goalscorer in El Clásico</p>
-                    <p>·Guinness World Record as top goalscorer for club (91 goals)</p>
+        <section id="section5">
+            <div class="result">
+                <h1 class="T">2008</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/champions.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Champions League</h2>
+                        <h3>2008/09</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/liga.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>LaLiga</h2>
+                        <h3>2008/09</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/copa-del-rei.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Copa
+                            del Rey</h2>
+                        <h3>2008/09</h3>
+                    </div>
                 </div>
 
-                <img src="https://static.messi.com/wp-content/uploads/2020/03/MEssi-record.png">
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/medalal-oro.png" class="trp">
+                        <h4 style="color: tomato;">(Argentina)</h4>
+                        <h2 style="color: aqua;">Beijing
+                            Olympic Games
+                            Gold Medal</h2>
+                        <h3>2008</h3>
+                    </div>
 
-                <div class="rec2">
-                    <p>·Most games played as a Barcelona player in its history</p>
-                    <p>·Most trophies won as a Barcelona player</p>
-                    <p>·Most goals in a LaLiga season (50 goals)</p>
-                    <p>·All-time top goalscorer in the Champions with the same team</p>
-                    <p>·Argentinian with most honours</p>
-                    <p>·The game's all-time leading Argentine goalscorer</p>
-                    <p>·Argentina's all-time leading goalscorer</p>
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/MVP-LA-LIGA.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">MVP
+                            LaLiga</h2>
+                        <h3>2008/09</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/goleador-europa.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Champions
+                            top scorer</h2>
+                        <h3>2008/09</h3>
+                    </div>
                 </div>
-            </main>
+            </div>
         </section>
-        <footer>
-           <img src='https://besthqwallpapers.com/Uploads/7-3-2018/43338/thumb2-4k-lionel-messi-2018-goal-fc-barcelona.jpg'>
-        </footer>
-        <br>
-        <h4 style="text-align-last: center;">Made by Arya</h4>
-    </body>
-</html>
 
+        <section id="section6">
+            <div class="result">
+                <h1 class="T">2009</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/mundialito-de-clubs.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Club World Cup</h2>
+                        <h3>2009/10</h3>
+                    </div>
 
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/liga.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>LaLiga</h2>
+                        <h3>2009/10</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/european-supercup.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>European Super Cup</h2>
+                        <h3>2009/10</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/spanish-supercup.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Supercopa
+                            de España</h2>
+                        <h3>2009/10</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/ONZE.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Onze d'Or</h2>
+                        <h3>2009</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/balon-de-oro.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Ballon d'Or</h2>
+                        <h3>2009</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/fifa-world-player.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">FIFA World Player</h2>
+                        <h3>2009</h3>
+                    </div>
+
+                    <img src="https://www.footyrenders.com/render/Lio.png" class="img4">
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/MVP-LA-LIGA.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">MVP
+                            LaLiga</h2>
+                        <h3>2009/10</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/Pichichi-liga.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Pichichi LaLiga</h2>
+                        <h3>2009/10</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/boat-d_or.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">European Golden Shoe</h2>
+                        <h3>2009/10</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/goleador-europa.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Champions
+                            top scorer</h2>
+                        <h3>2009/10</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section7">
+            <div class="result">
+                <h1 class="T">2010</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/champions.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Champions League</h2>
+                        <h3>2010</h3>
+                    </div>
+
+                    <img src="https://www.pngarts.com/files/5/Footballer-Lionel-Messi-Transparent-Background-PNG.png" class="img5">
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/liga.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>LaLiga</h2>
+                        <h3>2010/11</h3>
+                    </div>  
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/spanish-supercup.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Supercopa
+                            de España</h2>
+                        <h3>2010/11</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/millor-jugador-europa.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Men's of the Year</h2>
+                        <h3>2010/11</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/balon-de-oro.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Ballon d'Or</h2>
+                        <h3>2010</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/MVP-LA-LIGA.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">MVP
+                            LaLiga</h2>
+                        <h3>2010/11</h3>
+                    </div>
+                
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/goleador-europa.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Champions
+                            top scorer</h2>
+                        <h3>2010/11</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section8">
+            <div class="result">
+                <h1 class="T">2011</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/copa-del-rei.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Copa
+                            del Rey</h2>
+                        <h3>2011/12</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/mundialito-de-clubs.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Club World Cup</h2>
+                        <h3>2011</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/european-supercup.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>European Super Cup</h2>
+                        <h3>2011/12</h3>
+                    </div>  
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/spanish-supercup.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Supercopa
+                            de España</h2>
+                        <h3>2011/12</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/boat-d_or.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">European Golden Shoe</h2>
+                        <h3>2011/12</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/MVP-LA-LIGA.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">MVP
+                            LaLiga</h2>
+                        <h3>2011/12</h3>
+                    </div>
+                
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/goleador-europa.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Champions
+                            top scorer</h2>
+                        <h3>2011/12</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/balon-de-oro.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Ballon d'Or</h2>
+                        <h3>2011</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/Pichichi-liga.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Pichichi LaLiga</h2>
+                        <h3>2011/12</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/ONZE.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Onze d'Or</h2>
+                        <h3>2011</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section9">
+            <div class="result">
+                <h1 class="T">2012</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/liga.png">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>LaLiga</h2>
+                        <h3>2012/13</h3>
+                    </div>
+                    
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/balon-de-oro.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Ballon d'Or</h2>
+                        <h3>2012</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/boat-d_or.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">European Golden Shoe</h2>
+                        <h3>2012/13</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/Pichichi-liga.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Pichichi LaLiga</h2>
+                        <h3>2012/13</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/MVP-LA-LIGA.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">MVP
+                            LaLiga</h2>
+                        <h3>2012/13</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/ONZE.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Onze d'Or</h2>
+                        <h3>2012</h3>
+                    </div>
+                </div>
+
+                <h1 class="T" id="a2013">2013</h1>
+                <div class="row">
+                    <div class="resultcol1">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/spanish-supercup.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Supercopa
+                            de España</h2>
+                        <h3>2013/14</h3>
+                    </div>
+                    <img src="https://cdn.wallpapersafari.com/13/97/RZkUxS.png" class="img6">
+                </div>
+            </div>
+        </section>
+
+        <section id="section10">
+            <div class="result">
+                <h1 class="T">2014</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/champions.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Champions League</h2>
+                        <h3>2014/15</h3>
+                    </div>
+    
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/liga.png">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>LaLiga</h2>
+                        <h3>2014/15</h3>
+                    </div>
+    
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/copa-del-rei.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Copa
+                            del Rey</h2>
+                        <h3>2014/15</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/mundial-futbol.png">
+                        <h4 style="color: tomato;">(Argentina)</h4>
+                        <h2 style="color: aqua;">FIFA World Cup Finalist</h2>
+                        <h3>2014</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/MVP-LA-LIGA.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">MVP
+                            LaLiga</h2>
+                        <h3>2014/15</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/goleador-europa.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Champions
+                            top scorer</h2>
+                        <h3>2014/15</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/pilota-d_or.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">2014 World Cup
+                            Golden Ball</h2>
+                        <h3>2014</h3>
+                    </div>
+
+                    <img src="https://lh3.googleusercontent.com/proxy/Yw6HC5VSr4V0qHYL6rQ8Da9yeFXPA1EP8Lj5PkV-21Jhgc1SJdvu6Udu7dQSoXW-VyXVagYzXltby1s77NQhWqiSCEyh70VlCBf3fm84oB-Nh7Zclqb0m6lG9g" alt="">
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/millor-jugador-europa.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Men's Player
+                            of the Year</h2>
+                        <h3>2014</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section11">
+            <div class="result">
+                <h1 class="T">2015</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/liga.png">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>LaLiga</h2>
+                        <h3>2014/15</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/copa-del-rei.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Copa
+                            del Rey</h2>
+                        <h3>2015/16</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/mundialito-de-clubs.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Club World Cup</h2>
+                        <h3>2015</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/european-supercup.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>European Super Cup</h2>
+                        <h3>2015/16</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/copa-america.png" class="trp">
+                        <h4>(Argentina)</h4>
+                        <h2>Copa América
+                            Finalist</h2>
+                        <h3>2015</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/balon-de-oro.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Ballon d'Or</h2>
+                        <h3>2015</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section12">
+            <div class="result">
+                <h1 class="T">2016</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/copa-del-rei.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Copa
+                            del Rey</h2>
+                        <h3>2016/17</h3>
+                    </div>
+
+                    <div class="resultcol1">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/spanish-supercup.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Supercopa
+                            de España</h2>
+                        <h3>2016/17</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/copa-america.png" class="trp">
+                        <h4>(Argentina)</h4>
+                        <h2>Copa América
+                            Finalist</h2>
+                        <h3>2016</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/boat-d_or.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">European Golden Shoe</h2>
+                        <h3>2016/17</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/Pichichi-liga.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Pichichi LaLiga</h2>
+                        <h3>2016/17</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/MVP-LA-LIGA.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">MVP
+                            LaLiga</h2>
+                        <h3>2016/17</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section13">
+            <div class="result">
+                <h1 class="T">2017</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/liga.png">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>LaLiga</h2>
+                        <h3>2017/18</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/copa-del-rei.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Copa
+                            del Rey</h2>
+                        <h3>2017/18</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/boat-d_or.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">European Golden Shoe</h2>
+                        <h3>2017/18</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/Pichichi-liga.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Pichichi LaLiga</h2>
+                        <h3>2017/18</h3>
+                    </div>
+
+                    <img src="https://www.searchpng.com/wp-content/uploads/2019/01/Messi-PNG-Transparent-Messi-1.png" class="img7">
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/MVP-LA-LIGA.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">MVP
+                            LaLiga</h2>
+                        <h3>2017/18</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section14">
+            <div class="result">
+                <h1 class="T">2018</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/liga.png">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>LaLiga</h2>
+                        <h3>2018/19</h3>
+                    </div>
+
+                    <div class="resultcol1">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/spanish-supercup.png" class="trp">
+                        <h4>(FC Barcelona)</h4>
+                        <h2>Supercopa
+                            de España</h2>
+                        <h3>2018/19</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/boat-d_or.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">European Golden Shoe</h2>
+                        <h3>2018/19</h3>
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="resultcol1">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/Pichichi-liga.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Pichichi LaLiga</h2>
+                        <h3>2018/19</h3>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/MVP-LA-LIGA.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">MVP
+                            LaLiga</h2>
+                        <h3>2018/19</h3>
+                    </div>
+
+                    <div class="resultcol" style="margin-top: 20px;">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/goleador-europa.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Champions
+                            top scorer</h2>
+                        <h3>2018/19</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/ONZE.png">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Onze d'Or</h2>
+                        <h3>2018</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section15">
+            <div class="result">
+                <h1 class="T">2019</h1>
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/balon-de-oro.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Ballon d'Or</h2>
+                        <h3>2019</h3>
+                    </div>
+
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2021/02/FIFA.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">The Best Award</h2>
+                        <h3>2019</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="resultcol">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/laureus.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Laureus World
+                            Sports Awards</h2>
+                        <h3>2019</h3>
+                    </div>
+
+                    <img src="https://static.messi.com/wp-content/uploads/2020/03/messi-argentian-silhouette.png" class="img5">
+
+                    <div class="resultcol1">
+                        <img src="https://static.messi.com/wp-content/uploads/2020/03/Pichichi-liga.png" class="trp">
+                        <h4>(Lionel Messi)</h4>
+                        <h2 style="color: lightgreen;">Pichichi LaLiga</h2>
+                        <h3>2019/20</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>    
+</html>      
