@@ -161,7 +161,7 @@ hr{
 
 .bar2{
     width: 80%;
-    background: rgba(255,0,0,0.6);background: linear-gradient(to left,rgba(249,111,87,.85) 0%,rgba(212,85,86,.85) 53%,rgba(212,85,86,.85) 100%);
+    background: linear-gradient(to left,rgba(249,111,87,.85) 0%,rgba(212,85,86,.85) 53%,rgba(212,85,86,.85) 100%);
     font-size: 1.2rem;
     height: 1.5rem;
     line-height: 1.5rem;
@@ -256,4 +256,33 @@ hr{
 .bar8 h1{
     padding-left: 10px;
     color: white;
+}
+
+
+.achievements{
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url('https://wallpapercave.com/wp/wp5982696.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width:87%;
+    margin: 0px;
+    border:10px ridge rgb(217, 232, 236);
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.ach-text{
+    text-align: center;
+    color:white;
+    padding:10px;
+    font-size: x-large;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.ach-text h2{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
